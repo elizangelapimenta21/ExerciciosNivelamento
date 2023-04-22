@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Exercícios </title>
+        <link rel="stylesheet" href="./css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Programa Jovens Tegranos - Lista de Exercícios de Lógica e Programação </h1>
+            <span> (Pressione o exercício para visualizá-lo) </span>
+        </header>
+        <main>
+            <button type="button" class="collapsible"> Exercício 1 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Largura do Terreno: </label>
+                    <input type="number" id="larguraTerreno"/>
+                    <label>Comprimento do Terreno: </label>
+                    <input type="number" id="comprimentoTerreno"/>
+                    <label>Valor do metro quadrado: </label>
+                    <input type="number" id="valorMetroQuadrado"/>
+
+                    <button class="button-result" onclick="exercicio1()"> Calcular </button>
+
+                    <span id="areaTerreno"> </span>
+                    <span id="precoTerreno"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 2 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Base do Retângulo: </label>
+                    <input type="number" id="baseRetangulo"/>
+                    <label>Altura do Retângulo: </label>
+                    <input type="number" id="alturaRetangulo"/>
+
+                    <button class="button-result" onclick="exercicio2()"> Calcular </button>
+
+                    <span id="areaRetangulo"> </span>
+                    <span id="perimetroRetangulo"> </span>
+                    <span id="diagonalRetangulo"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 3 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Nome1: </label>
+                    <input type="text" id="nome1"/>
+                    <label>Idade1: </label>
+                    <input type="number" id="idade1"/>
+                    <label>Nome2: </label>
+                    <input type="text" id="nome2"/>
+                    <label>Idade2: </label>
+                    <input type="number" id="idade2"/>
+                    <button class="button-result" onclick="exercicio3()"> Calcular </button>
+
+                    <span id="idadeMedia"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 4 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Preço unitário do produto: </label>
+                    <input type="number" id="precoUnitario"/>
+                    <label>Quantidade comprada: </label>
+                    <input type="number" id="qtdComprada"/>
+                    <label>Dinheiro recebido: </label>
+                    <input type="number" id="dinheiroRecebido"/>
+                    <button class="button-result" onclick="exercicio4()"> Calcular </button>
+
+                    <span id="troco"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 5 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite o valor do raio do círculo:  </label>
+                    <input type="number" id="raioCirculo"/>
+                    <button class="button-result" onclick="exercicio5()"> Calcular </button>
+
+                    <span id="area"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 6 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Nome:  </label>
+                    <input type="text" id="nomeFuncionario"/>
+                    <label>Valor por hora:  </label>
+                    <input type="number" id="valorPorHora"/>
+                    <label>Horas trabalhadas:  </label>
+                    <input type="number" id="horasTrabalhadas"/>
+                    <button class="button-result" onclick="exercicio6()"> Calcular </button>
+
+                    <span id="valorPagamento"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 7 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Distância percorrida:  </label>
+                    <input type="number" id="distanciaPercorrida"/>
+                    <label>Combustível gasto:  </label>
+                    <input type="number" id="combustivelGasto"/>
+                    <button class="button-result" onclick="exercicio7()"> Calcular </button>
+
+                    <span id="consumoMedio"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 8 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite a medida A: </label>
+                    <input type="number" id="medidaA"/>
+                    <label>Digite a medida B: </label>
+                    <input type="number" id="medidaB"/>
+                    <label>Digite a medida C: </label>
+                    <input type="number" id="medidaC"/>
+                    <button class="button-result" onclick="exercicio8()"> Calcular </button>
+
+                    <span id="areaQuadrado"> </span>
+                    <span id="areaTriangulo"> </span>
+                    <span id="areaTrapezio"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 9 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite a duração em segundos: </label>
+                    <input type="number" id="duracaoSeg"/>
+                    <button class="button-result" onclick="exercicio9()"> Calcular </button>
+
+                    <span id="duracaoFormat"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 10 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Primeiro valor:  </label>
+                    <input type="number" id="primValor"/>
+                    <label>Segundo valor:  </label>
+                    <input type="number" id="segValor"/>
+                    <label>Terceiro valor:  </label>
+                    <input type="number" id="terValor"/>
+                    <button class="button-result" onclick="exercicio10()"> Calcular </button>
+
+                    <span id="menorValor"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 11 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite a primeira nota:  </label>
+                    <input type="number" id="primNota"/>
+                    <label>Digite a segunda nota:  </label>
+                    <input type="number" id="segNota"/>
+                    <button class="button-result" onclick="exercicio11()"> Calcular </button>
+
+                    <span id="notaFinal"> </span>
+                    <span id="conceito"> </span>
+                </div>
+            </div>
+            
+            <button type="button" class="collapsible"> Exercício 12 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Coeficiente a:  </label>
+                    <input type="number" id="coeficienteA"/>
+                    <label>Coeficiente b:  </label>
+                    <input type="number" id="coeficienteB"/>
+                    <label>Coeficiente c:  </label>
+                    <input type="number" id="coeficienteC"/>
+                    <button class="button-result" onclick="exercicio12()"> Calcular </button>
+
+                    <span id="valorX1"> </span>
+                    <span id="valorX2"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 13 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite a quantidade de minutos:   </label>
+                    <input type="number" id="qtdMinutos"/>
+                    <button class="button-result" onclick="exercicio13()"> Calcular </button>
+
+                    <span id="valorPagar"> </span>
+                </div>
+            </div>
+            
+            <button type="button" class="collapsible"> Exercício 14 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Preço unitário do produto:   </label>
+                    <input type="number" id="precoProduto"/>
+                    <label>Quantidade comprada:   </label>
+                    <input type="number" id="qtdCompradaProduto"/>
+                    <label>Dinheiro recebido:  </label>
+                    <input type="number" id="dinheiro"/>
+                    <button class="button-result" onclick="exercicio14()"> Calcular </button>
+
+                    <span id="trocoCliente"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 15 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite a medida da glicose:    </label>
+                    <input type="number" id="medGlicose"/>
+                    <button class="button-result" onclick="exercicio15()"> Calcular </button>
+
+                    <span id="classificacao"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 16 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite as 3 distâncias:    </label>
+                    <input type="number" id="distancia1"/>
+                    <input type="number" id="distancia2"/>
+                    <input type="number" id="distancia3"/>
+                    <button class="button-result" onclick="exercicio16()"> Calcular </button>
+
+                    <span id="maiorDistancia"> </span>
+                </div>
+            </div>
+            
+            <button type="button" class="collapsible"> Exercício 17 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite dois números inteiros    </label>
+                    <input type="number" id="numero1"/>
+                    <input type="number" id="numero2"/>
+                    <button class="button-result" onclick="exercicio17()"> Calcular </button>
+
+                    <span id="multiplos"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 18 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Você vai digitar a temperatura em qual escala (C/F)?  </label>
+                    <input type="text" id="escala" maxlength="1"/>
+                    <label>Digite a temperatura:  </label>
+                    <input type="number" id="temperatura"/>
+                    <button class="button-result" onclick="exercicio18()"> Converter </button>
+
+                    <span id="tempConvert"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 19 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite o salario da pessoa: </label>
+                    <input type="number" id="salarioFuncionario"/>
+                    <button class="button-result" onclick="exercicio19()"> Calcular </button>
+
+                    <span id="novoSalario"> </span>
+                    <span id="aumento"> </span>
+                    <span id="porcentagem"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 20 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Número inicial: </label>
+                    <input type="number" id="numeroInicial"/>
+                    <label>Número final: </label>
+                    <input type="number" id="numeroFinal"/>
+                    <button class="button-result" onclick="exercicio20()"> Calcular </button>
+
+                    <span id="resultadoFinal"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 21 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite o valor de X: </label>
+                    <input type="number" id="valorX"/>
+                    <button class="button-result" onclick="exercicio21()"> Mostrar </button>
+
+                    <span id="pares"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 22 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Deseja a tabuada para qual valor? </label>
+                    <input type="number" id="valorN"/>
+                    <button class="button-result" onclick="exercicio22()"> Mostrar </button>
+
+                    <span id="tabuada"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 23 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Digite dois números: </label>
+                    <input type="number" id="intX"/>
+                    <input type="number" id="intY"/>
+                    <button class="button-result" onclick="exercicio23()"> Calcular </button>
+
+                    <span id="somaImpares"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 24 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Números recebidos: </label>
+                    <input type="number" id="num1"/>
+                    <input type="number" id="num2"/>
+                    <input type="number" id="num3"/>
+                    <input type="number" id="num4"/>
+                    <input type="number" id="num5"/>
+                    <button class="button-result" onclick="exercicio24()"> Calcular </button>
+
+                    <span id="ordenados"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 25 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Dia: </label>
+                    <input type="number" id="diaNas"/>
+                    <label>Mês: </label>
+                    <input type="number" id="mesNas"/>
+                    <button class="button-result" onclick="exercicio25()"> Exibir signo </button>
+
+                    <span id="signo"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 26 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Palavra: </label>
+                    <input type="text" id="palavra"/>
+                    <button class="button-result" onclick="exercicio26()"> Mostrar </button>
+
+                    <span id="vogais"> </span>
+                    <span id="consoantes"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 27 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Palavra: </label>
+                    <input type="text" id="numOrPalavra"/>
+                    <button class="button-result" onclick="exercicio27()"> Mostrar </button>
+
+                    <span id="palindromo"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 28 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Valores: </label>
+                    <input type="number" id="valor1"/>
+                    <input type="number" id="valor2"/>
+                    <input type="number" id="valor3"/>
+                    <input type="number" id="valor4"/>
+                    <input type="number" id="valor5"/>
+                    <button class="button-result" onclick="exercicio28()"> Mostrar </button>
+
+                    <span id="maiorMenorValor"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 29 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>CNPJ: </label>
+                    <input type="text" id="cnpj"/>
+                    <button class="button-result" onclick="exercicio29()"> Validar </button>
+
+                    <span id="cnpjValido"> </span>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible"> Exercício 30 </button>
+            <div class="content">
+                <div class="content-div">
+                    <label>Número: </label>
+                    <input type="text" id="numerico"/>
+                    <button class="button-result" onclick="exercicio30()"> Mostrar </button>
+
+                    <span id="valorPorExtenso"> </span>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript" src="./scripts/collapse.js"></script>
+        <script type="text/javascript" src="./scripts/scripts.js"></script>
+
+    </body>
+</html>
